@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Handjet:wght@300&family=Inter:wght@700&family=Kanit:wght@700&family=Oxygen:wght@400;700&family=Poppins:wght@400;500;700;800&display=swap');
+
+
+:root {
+  --color-primary-dark: #5651e5;
+  --color-primary-light: #709dff;
+}
+
+
+@layer base {
+  html {
+    @apply scroll-smooth
+  }
+
+  body {
+    @apply font-[Poppins] scroll-smooth
+  }
+
+  li {
+    @apply p-4 text-sm
+  }
+
+  button {
+    @apply px-4 py-2 border bg-gradient-to-r from-[var(--color-primary-dark)] to-[var(--color-primary-light)] text-white
+  }
+
+  h2 {
+    @apply text-xl font-bold;
+  }
+
+}
